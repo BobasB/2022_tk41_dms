@@ -23,7 +23,14 @@ if a==1:
 
 white True:
     print()
-    
+
+```
+
+
+```bash
+echo "1"
+ls -la
+pwd
 ```
 
 
