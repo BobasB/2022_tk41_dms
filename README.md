@@ -27,7 +27,7 @@ white True:
 ```
 
 
-```bash
+```bash "This s bash formatting"
 echo "1"; ls -la; pwd
 ```
 
