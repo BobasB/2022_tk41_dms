@@ -28,9 +28,7 @@ white True:
 
 
 ```bash
-echo "1"
-ls -la
-pwd
+echo "1"; ls -la; pwd
 ```
 
 
