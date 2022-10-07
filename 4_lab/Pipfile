@@ -6,8 +6,10 @@ name = "pypi"
 [packages]
 pandas = "==1.4.0"
 redis = "*"
+flask = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.10"
