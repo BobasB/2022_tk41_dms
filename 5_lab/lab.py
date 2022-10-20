@@ -1,5 +1,5 @@
 class Rocket:
-    def __init__(self, name:str, mass) -> None:
+    def __init__(self, name:str, mass:float) -> None:
         #Ассерт можемо також задати через IF
         #if not isinstance(name, str):
         #    raise AssertionError("Назва ракети має бути типу стрічка")
@@ -20,6 +20,10 @@ class Rocket:
 
     def convert_mass(self):
         return self.mass * 2.20462262
+
+class Rocket_2(Rocket):
+    def __init__(self, name: str, mass) -> None:
+        super().__init__(name, mass)
 
 
 #r = Rocket("Falcon 9", 549054)
