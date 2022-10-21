@@ -5,7 +5,7 @@ class Rocket:
         #    raise AssertionError("Назва ракети має бути типу стрічка")
         assert isinstance(name, str), "Назва ракети має бути типу стрічка"
         assert name.isascii(), "Назва повинна містити символи з таблиці ASCII."
-        assert mass > 0, "Маса має буити більшою за 0!"
+        #assert mass > 0, "Маса має буити більшою за 0!"
         
         self.name = name
         self.mass = mass
@@ -26,6 +26,14 @@ class Rocket_2(Rocket):
         super().__init__(name, mass)
 
 
+def test_correct_mass():
+    r = Rocket("Falcon 9", 549054)
+    assert r.mass > 0, "Маса має буити більшою за 0!"
+    return True
+
 #r = Rocket("Falcon 9", 549054)
 #print(r.info)
-#print(r.info_en)       
+#print(r.info_en)  
+# 
+if test_correct_mass():
+    print("Маса відображається коректно")   

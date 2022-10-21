@@ -30,6 +30,12 @@ class TestMyLab(unittest.TestCase):
         self.assertEqual(self.obj.mass, self.mass)
         self.assertIsInstance(self.obj.name, str)
         self.assertIsInstance(self.obj.mass, float)
+    
+    def test_info(self):
+        self.assertIn(self.obj.name, self.obj.info)
+        self.assertIn(str(self.obj.mass), self.obj.info)
+        self.assertIn(self.obj.name, self.obj.info_en)
+        self.assertIn(str(self.obj.convert_mass()), self.obj.info_en)
 
 
 if __name__ == '__main__':
