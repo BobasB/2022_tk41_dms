@@ -1,5 +1,6 @@
 import unittest
 from lab import Rocket, Rocket_2
+import time
 
 
 class TestMyLab(unittest.TestCase):
@@ -39,7 +40,10 @@ class TestMyLab(unittest.TestCase):
         self.assertIn(str(self.obj.convert_mass()), self.obj.info_en)
     
     def test_fail_github_actions(self):
-        self.assertTrue(False)
+        #for i in range(5):
+        #    time.sleep(5)
+        #    print(f"Запускаємо тест {i}")
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':
