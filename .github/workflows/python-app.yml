@@ -39,3 +39,6 @@ jobs:
       run: |
         cd 5_lab/
         pytest tests.py -v
+    - name: Start app
+      run: |
+        python ./5_lab/lab.py 
