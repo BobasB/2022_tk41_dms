@@ -37,6 +37,9 @@ class TestMyLab(unittest.TestCase):
         self.assertIn(str(self.obj.mass), self.obj.info)
         self.assertIn(self.obj.name, self.obj.info_en)
         self.assertIn(str(self.obj.convert_mass()), self.obj.info_en)
+    
+    def test_fail_github_actions(self):
+        self.assertTrue(False)
 
 
 if __name__ == '__main__':
