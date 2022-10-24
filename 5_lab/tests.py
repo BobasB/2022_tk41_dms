@@ -1,6 +1,7 @@
 import unittest
 from lab import Rocket, Rocket_2
 
+
 class TestMyLab(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -19,18 +20,18 @@ class TestMyLab(unittest.TestCase):
         for mass in [3700000, 3800000]:
             obj = Rocket("Ares V", mass)
             self.assertAlmostEqual(obj.convert_mass(), mass * 2.20462262)
-    
+
     def test_obj_correct(self):
         self.assertIsInstance(self.obj, Rocket)
         for class_type in [str, int, float]:
             self.assertNotIsInstance(self.obj, class_type)
-        
+
     def test_correct_attributes(self):
         self.assertEqual(self.obj.name, self.name)
         self.assertEqual(self.obj.mass, self.mass)
         self.assertIsInstance(self.obj.name, str)
         self.assertIsInstance(self.obj.mass, float)
-    
+
     def test_info(self):
         self.assertIn(self.obj.name, self.obj.info)
         self.assertIn(str(self.obj.mass), self.obj.info)
