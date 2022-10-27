@@ -4,8 +4,8 @@
 name: Python Starter
 
 on:
-  #push:
-  #  branches: [ "main" ]
+  push:
+    branches: [ "main" ]
   #pull_request:
   #  branches: [ "main" ]
   workflow_dispatch:
@@ -38,7 +38,8 @@ jobs:
           cat 4_lab/lab.py
   
   lab_5:
-    needs: lab_4
+    needs: lab_3
+    if: ${{ github.event_name != 'push' }}
     name: Execute Tests for Lab 5
     runs-on: ubuntu-latest
     steps:
