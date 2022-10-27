@@ -14,10 +14,18 @@ permissions:
   contents: read
 
 jobs:
-  build:
-
+  lab_4:
+    name: Run Lab 4
     runs-on: ubuntu-latest
-
+    steps:
+      - uses: actions/checkout@v3
+      - name: First
+        run: |
+          cat 4_lab/lab.py
+  
+  lab_5:
+    name: Execute Tests for Lab 5
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
