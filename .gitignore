@@ -1,2 +1,3 @@
 4_lab/myenv/
 5_lab/__pycache__/
+5_lab/*coverage*
