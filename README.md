@@ -1,5 +1,6 @@
 [![Pass Tests](https://github.com/BobasB/2022_tk41_dms/actions/workflows/python-app.yml/badge.svg)](https://github.com/BobasB/2022_tk41_dms/actions/workflows/python-app.yml)
 [![codecov](https://codecov.io/gh/BobasB/2022_tk41_dms/branch/main/graph/badge.svg?token=BBONFUD0ZX)](https://codecov.io/gh/BobasB/2022_tk41_dms)
+![GitHub](https://img.shields.io/github/license/BobasB/2022_tk41_dms?style=social)
 # 2022_tk41_dms
 Завдання для курсу "Технології представлення даних у СУБД"
 
